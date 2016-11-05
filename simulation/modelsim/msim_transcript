@@ -1,0 +1,187 @@
+# Reading C:/altera/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do vgacontroller_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Young-hoon\ Kim/Desktop/ECE550/HW2/vgacontroller_restored/db {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:53:29 on Sep 30,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db" C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 21:53:29 on Sep 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:53:29 on Sep 30,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity myvga
+# -- Compiling architecture basic of myvga
+# End time: 21:53:29 on Sep 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:53:29 on Sep 30,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vmem
+# -- Compiling architecture SYN of vmem
+# End time: 21:53:29 on Sep 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:53:29 on Sep 30,2016
+# vcom -reportprogress 300 -93 -work work C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity counter_single_dff
+# -- Compiling architecture arch of counter_single_dff
+# ** Error: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd(27): (vcom-1436) Actual expression (infix expression) of formal "d" is not globally static.
+# 
+# ** Error: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd(33): VHDL Compiler exiting
+# End time: 21:53:29 on Sep 30,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/altera/16.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./vgacontroller_run_msim_rtl_vhdl.do line 11
+# C:/altera/16.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd}"
+do simulateVGA.do
+# vsim work.myvga 
+# Start time: 21:53:34 on Sep 30,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading work.myvga(basic)
+# ** Warning: (vsim-3473) Component instance "H_V_Counters : sync_HC_VC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "Horizontal_FSM : HFSM" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "Vertical_FSM : VFSM" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "pixel_counter : counter_19_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# Loading work.vmem(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# ** Warning: (vsim-3473) Component instance "H_V_Counters : sync_HC_VC" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "Horizontal_FSM : HFSM" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "Vertical_FSM : VFSM" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# ** Warning: (vsim-3473) Component instance "pixel_counter : counter_19_bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /myvga File: C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+# unsigned
+vcom -reportprogress 300 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:53:45 on Sep 30,2016
+# vcom -reportprogress 300 -work work C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity myvga
+# -- Compiling architecture structure of myvga
+# End time: 21:53:45 on Sep 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do simulateVGA.do
+# End time: 21:53:49 on Sep 30,2016, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 8
+# vsim work.myvga 
+# Start time: 21:53:49 on Sep 30,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.myvga(structure)
+# Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# Loading cycloneive.cycloneive_jtag(architecture_jtag)
+# ** Warning: Design size of 150637 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tdo has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tmsutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tckutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tdiutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: Design size of 74913 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tdo has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tmsutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tckutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /myvga/altera_internal_jtag/tdiutap has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# unsigned
+# Break key hit
+# Simulation stop requested.
+# End time: 21:55:33 on Sep 30,2016, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 10

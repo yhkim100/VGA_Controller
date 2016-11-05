@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+library altera;
+use altera.altera_primitives_components.all;
+
+entity HFSM is
+port (
+    clk     : in std_logic;
+    rst     : in std_logic;
+    blank   : out std_logic;
+    hsync   : out std_logic);
+end HFSM;
+
+
+architecture basic of HFSM is
+
+	constant AV		: std_logic_vector(3 downto 0) 	:= "0001";
+	constant FP		: std_logic_vector(3 downto 0)	:= "0010";
+	constant SP		: std_logic_vector(3 downto 0) 	:= "0100";
+	constant BP		: std_logic_vector(3 downto 0)	:= "1000";
+
+
+begin
+
+--- Replace this with your code ---
+
+
+
+end basic;

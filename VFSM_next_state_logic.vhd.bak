@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity VFSM_next_state_logic is port (
+		rst				: in std_logic;
+		V_count_value	: in	std_logic_vector (11 downto 0);
+		present_state	: in std_logic_vector(3 downto 0);
+		next_state		: out std_logic_vector(3 downto 0)
+		);
+end entity;
+
+architecture arch of VFSM_next_state_logic is
+
+	constant VAV		: std_logic_vector(3 downto 0) 	:= "0001";
+	constant VFP		: std_logic_vector(3 downto 0)	:= "0010";
+	constant VSP		: std_logic_vector(3 downto 0) 	:= "0100";
+	constant VBP		: std_logic_vector(3 downto 0)	:= "1000";
+
+begin
+	next_state <= 	VAV when (rst = '1') else 
+						VAV when to_integer(unsigned(V_count_value) < 640) else
+						--transitions from AV
+						VFP when ((present_state = VAV) and to_integer(unsigned(V_count_value) = 640)) else
+						--transitions from FP
+						VSP when ((present_state = VFP) and to_integer(unsigned(V_count_value) = 656)) else
+						--transitions from SP
+						VBP when ((present_state = VSP) and to_integer(unsigned(V_count_value) = 752)) else
+						--transitions from RIGHT_HALF state
+						VAV when ((present_state = VBP) and to_integer(unsigned(V_count_value) = 800)) else
+						--include IDLE to cover missed cases.  Avoids inferred latches (which are bad).
+						IDLE;
+
+
+end arch;

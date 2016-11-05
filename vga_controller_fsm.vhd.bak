@@ -1,0 +1,63 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+--add the dffs!!
+library altera;
+use altera.altera_primitives_components.all;
+
+entity vga_controller_fsm is port(
+	clk				: in std_logic;
+	rst				: in std_logic;
+	h_sync			: in std_logic;
+	v_sync			: in std_logic;
+	spin_right		: out std_logic;
+	spin_left		: out std_logic);
+end entity;
+
+architecture arch of vga_controller_fsm is
+	
+	constant GOING_LEFT		: std_logic_vector(5 downto 0) 	:= "001000";
+	constant GOING_RIGHT		: std_logic_vector(5 downto 0)	:= "100000";
+	
+	signal next_state		: std_logic_vector(5 downto 0);
+	signal present_state	: std_logic_vector(5 downto 0);
+	signal not_rst 		: std_logic;
+	
+	component next_state_logic is port (
+		left_sensor		: in std_logic;
+		right_sensor	: in std_logic;
+		present_state	: in std_logic_vector(5 downto 0);
+		next_state		: out std_logic_vector(5 downto 0)
+	);
+	end component;
+	
+begin
+
+	not_rst <= not rst;
+
+	next_state_logic_inst :  next_state_logic port map(
+		left_sensor		=> left_sensor,
+		right_sensor	=> right_sensor,
+		present_state	=> present_state,
+		next_state		=> next_state
+	);
+						
+--Moore output logic
+	spin_right <= '1' when present_state = GOING_RIGHT else '0';
+	spin_left <= '1' when present_state = GOING_LEFT else '0';
+		
+--Mealey output logic
+
+--next state registers
+	gen_dffs: for i in 5 downto 0 generate
+		next_to_present_dffs : dff port map (
+		  clk => clk,
+		  clrn => not_rst,
+		  prn => '1',
+		  d => next_state(i),
+		  q => present_state(i)
+		);
+	end generate gen_dffs;
+
+
+end arch;

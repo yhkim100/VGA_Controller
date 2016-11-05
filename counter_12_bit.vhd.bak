@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+
+
+entity counter_12_bit is 
+port(
+	clk		: 	in		std_logic;
+	d			:	in		std_logic;
+	q			:	out	std_logic
+);
+end counter_12_bit;
+
+architecture arch of counter_12_bit is
+	
+begin
+
+	gen_dffs: for i in 11 downto 0 generate
+		counter : dff port map (
+		  clk => clk,
+		  clrn => not_rst,
+		  prn => '1',
+		  d => next_state(i),
+		  q => present_state(i)
+		);
+	end generate gen_dffs;
+	
+end arch;

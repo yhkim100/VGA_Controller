@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+library altera;
+use altera.altera_primitives_components.all;
+
+
+entity counter_single_dff is 
+port(
+	enable		: 	in		std_logic;
+	rst			:	in		std_logic;
+	q				:	out	std_logic;
+	out_enable	:	out	std_logic;
+);
+end counter_single_dff;
+
+architecture arch of counter_single_dff is
+	signal	not_rst				:	std_logic;
+	signal	q_value_tmp			:	std_logic;
+	signal	enable_values_tmp	:	std_logic;
+	
+begin 
+	
+	not_rst <= not rst;
+	
+	dff_reg : dff port map (
+	  clk => clk,
+	  clrn => not_rst,
+	  prn => '1',
+	  d => q_value_tmp xor enable,
+	  q => q_value_tmp
+	);
+	
+	q <= q_value_tmp;
+	out_enable	<=	q_value_tmp and enable;
+end arch;

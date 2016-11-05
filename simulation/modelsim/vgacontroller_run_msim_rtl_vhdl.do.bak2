@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_12_bit.vhd}
+vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd}
+vcom -93 -work work {C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/sync_HC_VC.vhd}
+

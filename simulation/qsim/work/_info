@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/qsim
+vcounter_10_bit
+Z1 !s110 1475185150
+!i10b 1
+!s100 _k^ENFT0R]`XOJlEOhLcH0
+Ig6e4ML]GV>iJXYc:><EeK3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1475185150
+Z3 8vgacontroller.vo
+Z4 Fvgacontroller.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1475185150.000000
+Z8 !s107 vgacontroller.vo|
+Z9 !s90 -work|work|vgacontroller.vo|
+!i113 1
+Z10 o-work work
+vcounter_10_bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 796=JM1Ef;Zajh5h;dCQP2
+IgJnIPXG]fFW5f?O089_RJ3
+R2
+R0
+w1475185149
+8counter_10_bit_test.vwf.vt
+Fcounter_10_bit_test.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 counter_10_bit_test.vwf.vt|
+!s90 -work|work|counter_10_bit_test.vwf.vt|
+!i113 1
+R10
+vcounter_12_bit
+Z12 !s110 1475189004
+!i10b 1
+!s100 eizozB]>=4X8no<0m3<732
+Ik<9i617b;f^g:RL8Ya=?51
+R2
+R0
+Z13 w1475189003
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1475189004.000000
+R8
+R9
+!i113 1
+R10
+vcounter_12_bit_vlg_vec_tst
+R12
+!i10b 1
+!s100 RmIL=VU01dIM?ddh=VdJg1
+I7L02lW7f5e3ooz1k>QD?z0
+R2
+R0
+R13
+8counter_12_bit_test.vwf.vt
+Fcounter_12_bit_test.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R14
+!s107 counter_12_bit_test.vwf.vt|
+!s90 -work|work|counter_12_bit_test.vwf.vt|
+!i113 1
+R10
+vcounter_sync_test
+Z15 !s110 1475194786
+!i10b 1
+!s100 3Z<RUbL5g1T6S_OBR=:z13
+I=3_o_TL@Q@<SMFkTo8aJG1
+R2
+R0
+w1475194785
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1475194786.000000
+R8
+R9
+!i113 1
+R10
+vcounter_sync_test_vlg_vec_tst
+R15
+!i10b 1
+!s100 E^[]7R8TEj?m?cdIT0JIm1
+IU2Xl^]>Zj2LFFN6c2`CVT3
+R2
+R0
+w1475194784
+8counter_sync_test.vwf.vt
+Fcounter_sync_test.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R16
+!s107 counter_sync_test.vwf.vt|
+!s90 -work|work|counter_sync_test.vwf.vt|
+!i113 1
+R10

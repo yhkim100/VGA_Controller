@@ -1,0 +1,60 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+library altera;
+use altera.altera_primitives_components.all;
+
+entity VFSM is
+port (
+    clk     		: in std_logic;
+    rst     		: in std_logic;
+	 V_count_value	: in	std_logic_vector (11 downto 0);
+    vsync   		: out std_logic);
+end VFSM;
+
+
+architecture basic of VFSM is
+
+	constant VAV		: std_logic_vector(3 downto 0) 	:= "0001";
+	constant VFP		: std_logic_vector(3 downto 0)	:= "0010";
+	constant VSP		: std_logic_vector(3 downto 0) 	:= "0100";
+	constant VBP		: std_logic_vector(3 downto 0)	:= "1000";
+
+	signal next_state		: std_logic_vector(3 downto 0);
+	signal present_state	: std_logic_vector(3 downto 0);
+
+	component VSM_next_state_logic is port (
+		rst				: in std_logic;
+		V_count_value	: in	std_logic_vector (11 downto 0);
+		present_state	: in std_logic_vector(3 downto 0);
+		next_state		: out std_logic_vector(3 downto 0)
+	);
+	end component;
+	
+begin
+
+--- Replace this with your code ---
+
+	next_state_logic_inst :  VSM_next_state_logic port map(
+		rst				=>	rst,
+		V_count_value	=> V_count_value,
+		present_state	=>	present_state,
+		next_state		=> next_state
+	);
+
+--Moore output logic
+	vsync <= '0' when present_state = VSP else '1';
+
+
+--next state registers
+	gen_dffs: for i in 3 downto 0 generate
+		next_to_present_dffs : dff port map (
+		  clk => clk,
+		  clrn => not_rst,
+		  prn => '1',
+		  d => next_state(i),
+		  q => present_state(i)
+		);
+	end generate gen_dffs;
+
+end basic;

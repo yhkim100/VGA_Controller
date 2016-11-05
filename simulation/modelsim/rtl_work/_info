@@ -1,0 +1,175 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim
+Ecounter_single_dff
+w1475188622
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx6 altera 11 dffeas_pack 0 22 f]3lf9@YecQXY?:9nU3z[2
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx6 altera 28 altera_primitives_components 0 22 Y1<AEW^7fEcRY3jd0@`=U2
+Z5 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z6 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+8C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd
+FC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd
+l0
+L8
+VGE45DlXY0JVKeU]i@o`]c0
+!s100 2hJJk_b7T[7X`5P9I<mkc1
+Z9 OV;C;10.4d;61
+31
+Z10 !s110 1475286809
+!i10b 1
+Z11 !s108 1475286809.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd|
+!s107 C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Emyvga
+Z14 w1475286786
+Z15 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 ^kCD41mNl0>`]XjZB>YSA0
+Z16 DPx10 cycloneive 21 cycloneive_components 0 22 g]cnIk[[fcjg=POME[ePX3
+R1
+R2
+R3
+R7
+R8
+R4
+R0
+Z17 8C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho
+Z18 FC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho
+l0
+L37
+Vd3Nm<XcQJ[jjQiGKEnmzi1
+!s100 G[[2bnJE8k5VeYj4hFDJC0
+R9
+32
+Z19 !s110 1475286825
+!i10b 1
+Z20 !s108 1475286825.000000
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho|
+Z22 !s107 C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/simulation/modelsim/vgacontroller.vho|
+!i113 1
+Z23 o-work work
+R13
+Astructure
+R15
+R16
+R1
+R2
+R3
+R7
+R8
+R4
+DEx4 work 5 myvga 0 22 d3Nm<XcQJ[jjQiGKEnmzi1
+l1162
+L92
+VTlN@:LAn2:jOeOOj_LIkB3
+!s100 DY<mM1za9Wo9NFgQXRVZO1
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R13
+Abasic
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 myvga 0 22 ^GngoJ0S@d_4?`GQ:hN3M3
+l78
+L20
+VM4mM<YcPhm]?ge43FaOAX3
+!s100 ]@;o;_iLWG_jPGGK9Y2Ed0
+R9
+31
+R10
+!i10b 1
+R11
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl|
+!s107 C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl|
+!i113 1
+R12
+R13
+FC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+w1475285803
+8C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+vpll_altpll
+R10
+!i10b 1
+!s100 _ml9_n6H[:bWZ@?:aPJ0Z3
+IVmXId?]U:NX@FO0MY<Vjm1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1475223679
+8C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v
+FC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v
+L0 30
+OV;L;10.4d;61
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db|C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/pll_altpll.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db}
+Evmem
+Z24 w1345244202
+R7
+R8
+R0
+Z25 8C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd
+Z26 FC:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd
+l0
+L42
+V1IT52UTm@=C5WmB]d`jm52
+!s100 64aV3kf_]GPWV^5>Y[0^I3
+R9
+31
+R10
+!i10b 1
+R11
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd|
+Z28 !s107 C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd|
+!i113 1
+R12
+R13
+Asyn
+R7
+R8
+DEx4 work 4 vmem 0 22 1IT52UTm@=C5WmB]d`jm52
+l81
+L52
+VJ5eDiXZ7RVa<PI_1587Zl3
+!s100 o[A;XznzUmYHI:f^7WGTo0
+R9
+31
+R10
+!i10b 1
+R11
+R27
+R28
+!i113 1
+R12
+R13

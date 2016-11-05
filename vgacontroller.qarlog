@@ -1,0 +1,53 @@
+Quartus Prime Archive log --	C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.qarlog
+
+Archive:	C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.qar
+Date:		Mon Oct 03 13:56:51 2016
+Quartus Prime		16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/HFSM.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/HFSM_next_state_logic.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/VFSM.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/VFSM_next_state_logic.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/assignment_defaults.qdf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_10_bit.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_12_bit.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_12_bit_test.vwf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_18_bit.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_19_bit.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_single_dff.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_sync_test.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/counter_sync_test.vwf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/d_ff.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/d_latch.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/stp1_auto_stripped.stp
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/db/vgacontroller.sim.cvwf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/myvga.vhdl
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/pll.bsf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/pll.cmp
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/pll.ppf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/pll.qip
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/pll.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/stp1.stp
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/sync_HC_VC.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/test.vwf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vga_controller_fsm.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.qpf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.qsf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.vhd
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller_assignment_defaults.qdf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.bsf
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.cmp
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.mif
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.qip
+C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vmem.vhd
+	======= Total: 36 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Oct 25 18:53:15 2016
+Source archive file:	C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller.qar
+Archive was extracted into	C:/Users/Young-hoon Kim/Desktop/ECE550/HW2/vgacontroller_restored/vgacontroller_restored/
+		 - successfully.

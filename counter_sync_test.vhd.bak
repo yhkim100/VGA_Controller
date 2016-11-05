@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_misc.all;
+library altera;
+use altera.altera_primitives_components.all;
+
+entity counter_sync_test is
+port (
+    clk     : in std_logic;
+    clearHC : in std_logic;
+	 clearVC : in std_logic;
+	 count_value_HC	:	out	std_logic_vector (11 downto 0)
+	 count_value_VC	:	out	std_logic_vector (11 downto 0)
+);
+end counter_sync_test;
+
+
+architecture basic of counter_sync_test is
+
+
+
+begin
+
+--- Replace this with your code ---
+red   <= (others => '0');
+green <= (others => '0');
+blue  <= (others => '0');
+
+blank <= '1';
+hsync <= '1';
+vsync <= '1';
+
+
+end basic;

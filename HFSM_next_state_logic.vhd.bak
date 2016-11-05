@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity HFSM_next_state_logic is port (
+		H_count_value	: in	std_logic_vector (11 downto 0);
+		present_state	: in std_logic_vector(3 downto 0);
+		next_state		: out std_logic_vector(3 downto 0)
+		);
+end entity;
+
+architecture arch of HFSM_next_state_logic is
+
+	constant AV		: std_logic_vector(3 downto 0) 	:= "0001";
+	constant FP		: std_logic_vector(3 downto 0)	:= "0010";
+	constant SP		: std_logic_vector(3 downto 0) 	:= "0100";
+	constant BP		: std_logic_vector(3 downto 0)	:= "1000";
+
+begin
+	next_state <= 	IDLE when (rst = '1') else 
+						GET_POSITION when ((present_state = IDLE) and (left_sensor = '1') and (right_sensor = '1')) else
+						--transitions from GET_POSITION
+						GET_POSITION when ((present_state = GET_POSITION) and (left_sensor = '1') and (right_sensor = '1')) else
+						LEFT_HALF when ((present_state = GET_POSITION) and (left_sensor = '1') and (right_sensor = '0')) else
+						RIGHT_HALF when ((present_state = GET_POSITION) and (left_sensor = '0') and (right_sensor = '1')) else
+						--transitions from LEFT_HALF
+						GOING_LEFT when ((present_state = LEFT_HALF) and (left_sensor = '0') and (right_sensor = '0')) else
+						GET_POSITION when ((present_state = LEFT_HALF) and (left_sensor = '0') and (right_sensor = '1')) else
+						GET_POSITION when ((present_state = LEFT_HALF) and (left_sensor = '1') and (right_sensor = '1')) else
+						LEFT_HALF when ((present_state = LEFT_HALF) and (left_sensor = '1') and (right_sensor = '0')) else	
+						--transitions from GOING_LEFT
+						GOING_LEFT when ((present_state = GOING_LEFT) and (left_sensor = '0') and (left_sensor = '0')) else
+						IDLE when ((present_state = GOING_LEFT) and ((left_sensor = '1') or (right_sensor = '1'))) else
+						--transitions from RIGHT_HALF state
+						GOING_RIGHT when ((present_state = RIGHT_HALF) and (left_sensor = '0') and (right_sensor = '0')) else
+						GET_POSITION when ((present_state = RIGHT_HALF) and (left_sensor = '1') and (right_sensor = '0')) else
+						GET_POSITION when ((present_state = RIGHT_HALF) and (left_sensor = '1') and (right_sensor = '1')) else
+						RIGHT_HALF when ((present_state = RIGHT_HALF) and (left_sensor = '0' and right_sensor = '1')) else
+						--transistions from GOING_RIGHT
+						GOING_RIGHT when ((present_state = GOING_RIGHT) and (left_sensor = '0') and (right_sensor = '0')) else
+						IDLE when ((present_state = GOING_RIGHT) and ((left_sensor = '1') or (right_sensor = '1'))) else
+						--include IDLE to cover missed cases.  Avoids inferred latches (which are bad).
+						IDLE;
+
+
+end arch;
